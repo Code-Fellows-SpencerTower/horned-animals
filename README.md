@@ -1,3 +1,15 @@
+# Horned-Animals
+
+This application displays images and descriptions of various horned animals.
+Users can filter animals by the number of horns and select their favorite images.
+
+Technologies used: Javascript, React, HTML, CSS, Bootstrap.
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
