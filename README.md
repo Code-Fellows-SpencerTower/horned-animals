@@ -6,6 +6,38 @@ Users can filter animals by the number of horns and select their favorite images
 Technologies used: Javascript, React, HTML, CSS, Bootstrap.
 
 
+Number and name of feature: #1 Display Images
+
+Estimate of time needed to complete: 1hr
+
+Start time: 2:40
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+Number and name of feature: ________________________________
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+Number and name of feature: ________________________________
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+
+
 
 
 
