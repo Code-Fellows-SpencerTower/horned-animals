@@ -16,11 +16,11 @@ Finish time: 4:22
 
 Actual time needed to complete: 1hr 40min
 
-Number and name of feature: ________________________________
+Number and name of feature: #2 Allow users to vote for their favorite beast
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 1hr
 
-Start time: _____
+Start time: 4:30
 
 Finish time: _____
 
