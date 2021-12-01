@@ -26,7 +26,7 @@ Finish time: _____
 
 Actual time needed to complete: _____
 
-Number and name of feature: ________________________________
+Number and name of feature: #3 Bootstrap
 
 Estimate of time needed to complete: _____
 

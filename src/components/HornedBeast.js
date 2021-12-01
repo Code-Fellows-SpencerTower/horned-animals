@@ -7,6 +7,8 @@ export default class HornedBeast extends Component {
         <h2>{this.props.title}</h2>
         <img src={this.props.imageURL} alt={this.props.title} title={this.props.title} />
         <p>{this.props.description}</p>
+        {/* Heart emoji from: https://emojiguide.org/red-heart */}
+        <button onClick={this.handleClick}>❤️</button>
       </div>
     );
   }
