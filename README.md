@@ -10,9 +10,9 @@ Number and name of feature: #1 Display Images
 
 Estimate of time needed to complete: 1hr
 
-Start time: 2:40
+Start time: 2:40pm
 
-Finish time: 4:22
+Finish time: 4:22pm
 
 Actual time needed to complete: 1hr 40min
 
@@ -20,17 +20,17 @@ Number and name of feature: #2 Allow users to vote for their favorite beast
 
 Estimate of time needed to complete: 1hr
 
-Start time: 4:30
+Start time: 4:30pm
 
-Finish time: _____
+Finish time: 5:00pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 30min
 
 Number and name of feature: #3 Bootstrap
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 1hr
 
-Start time: _____
+Start time: 5:00
 
 Finish time: _____
 

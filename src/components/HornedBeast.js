@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { Button, Card } from 'react-bootstrap';
 
 export default class HornedBeast extends Component {
 
@@ -13,17 +14,19 @@ export default class HornedBeast extends Component {
     this.setState({ favorites: this.state.favorites + 1 });
   }
 
-
   render() {
     return (
-      <div>
-        <h2>{this.props.title}</h2>
-        <img src={this.props.imageURL} alt={this.props.title} title={this.props.title} />
-        <p>{this.props.description}</p>
-        <p>❤️ {this.state.favorites}</p>
-        {/* Heart emoji from: https://emojiguide.org/red-heart */}
-        <button onClick={this.handleClick}>Favorite</button>
-      </div>
+      <Card style={{ width: '20rem' }}>
+        <Card.Img variant="top" src={this.props.imageURL} alt={this.props.title} title={this.props.title} />
+        <Card.Body>
+          <Card.Title>{this.props.title}</Card.Title>
+          <Card.Text>
+            <p>{this.props.description}</p>
+            <p>❤️ {this.state.favorites}</p>
+          </Card.Text>
+          <Button variant="primary" onClick={this.handleClick}>Favorite</Button>{' '}
+        </Card.Body>
+      </Card>
     );
   }
 }
