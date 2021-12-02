@@ -13,7 +13,8 @@ export default class App extends Component {
     this.state = {
       // modal not shown by default
       showModal: false,
-      clickedBeast: {}
+      clickedBeast: {},
+      filteredBeasts: beastData
     };
   }
 
@@ -27,19 +28,28 @@ export default class App extends Component {
     this.setState({ showModal: false });
   }
 
+  handleChange = (event) => {
+    const filteredArray = beastData.filter(beast => {
+      return beast.horns === parseInt(event.target.value);
+    });
+    this.setState({ filteredBeasts: filteredArray });
+
+  }
+
   render() {
     return (
       <div>
         <Header />
         <Form>
           <Form.Select onChange={this.handleChange}>
-            <option value="1-horn">1 horn</option>
-            <option value="2-horns">2 horns</option>
-            <option value="3-horns">3 horns</option>
-            <option value="3+-horns">3+ horns</option>
+            <option value="1">Filter Beasts by Number of Horns</option>
+            <option value="1">1 horn</option>
+            <option value="2">2 horns</option>
+            <option value="3">3 horns</option>
+            <option value="100">3+ horns</option>
           </Form.Select>
         </Form>
-        <Main beastData={beastData} showModal={this.showModal} closeModal={this.closeModal} />
+        <Main beastData={this.state.filteredBeasts} showModal={this.showModal} closeModal={this.closeModal} />
         <SelectBeast show={this.state.showModal} beast={this.state.clickedBeast} closeModal={this.closeModal} />
         <Footer />
       </div>
