@@ -37,3 +37,16 @@ Start time: 5:00pm, 10:20pm
 Finish time: 5:30pm, 
 
 Actual time needed to complete: _____
+
+
+Lab 03:
+
+Number and name of feature: #1 Display a Modal
+
+Estimate of time needed to complete: 3hrs
+
+Start time: 3:35pm
+
+Finish time: 
+
+Actual time needed to complete: _____
