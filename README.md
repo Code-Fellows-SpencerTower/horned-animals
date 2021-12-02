@@ -34,9 +34,9 @@ Estimate of time needed to complete: 1hr
 
 Start time: 5:00pm, 10:20pm
 
-Finish time: 5:30pm, 
+Finish time: 5:30pm, 12:00pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: ~3hrs
 
 
 Lab 03:
@@ -47,6 +47,6 @@ Estimate of time needed to complete: 3hrs
 
 Start time: 3:35pm
 
-Finish time: 
+Finish time: 10:15pm (includes breaks and dinner)
 
-Actual time needed to complete: _____
+Actual time needed to complete: ~5hrs
