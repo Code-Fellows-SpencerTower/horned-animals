@@ -30,10 +30,15 @@ export default class App extends Component {
 
   handleChange = (event) => {
     const filteredArray = beastData.filter(beast => {
+      if (event.target.value === 'show-all') {
+        return true;
+      }
+      if (event.target.value === '3+') {
+        return beast.horns > 3;
+      }
       return beast.horns === parseInt(event.target.value);
     });
     this.setState({ filteredBeasts: filteredArray });
-
   }
 
   render() {
@@ -42,11 +47,11 @@ export default class App extends Component {
         <Header />
         <Form>
           <Form.Select onChange={this.handleChange}>
-            <option value="1">Filter Beasts by Number of Horns</option>
+            <option value="show-all">All beasts</option>
             <option value="1">1 horn</option>
             <option value="2">2 horns</option>
             <option value="3">3 horns</option>
-            <option value="100">3+ horns</option>
+            <option value="3+">3+ horns</option>
           </Form.Select>
         </Form>
         <Main beastData={this.state.filteredBeasts} showModal={this.showModal} closeModal={this.closeModal} />
