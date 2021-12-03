@@ -4,6 +4,7 @@ import Main from './components/Main.js';
 import Footer from './components/Footer.js';
 import beastData from './components/data.json';
 import SelectBeast from './components/SelectBeast.js';
+import Form from 'react-bootstrap/Form';
 
 export default class App extends Component {
 
@@ -12,7 +13,8 @@ export default class App extends Component {
     this.state = {
       // modal not shown by default
       showModal: false,
-      clickedBeast: {}
+      clickedBeast: {},
+      filteredBeasts: beastData
     };
   }
 
@@ -26,11 +28,33 @@ export default class App extends Component {
     this.setState({ showModal: false });
   }
 
+  handleChange = (event) => {
+    const filteredArray = beastData.filter(beast => {
+      if (event.target.value === 'show-all') {
+        return true;
+      }
+      if (event.target.value === '3+') {
+        return beast.horns > 3;
+      }
+      return beast.horns === parseInt(event.target.value);
+    });
+    this.setState({ filteredBeasts: filteredArray });
+  }
+
   render() {
     return (
       <div>
         <Header />
-        <Main beastData={beastData} showModal={this.showModal} closeModal={this.closeModal} />
+        <Form>
+          <Form.Select onChange={this.handleChange}>
+            <option value="show-all">All beasts</option>
+            <option value="1">1 horn</option>
+            <option value="2">2 horns</option>
+            <option value="3">3 horns</option>
+            <option value="3+">3+ horns</option>
+          </Form.Select>
+        </Form>
+        <Main beastData={this.state.filteredBeasts} showModal={this.showModal} closeModal={this.closeModal} />
         <SelectBeast show={this.state.showModal} beast={this.state.clickedBeast} closeModal={this.closeModal} />
         <Footer />
       </div>
